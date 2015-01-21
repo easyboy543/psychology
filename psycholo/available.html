@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>輔導關懷網</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<link href="/psychology/css/themes/front_end.min.css" rel="stylesheet">
+		<link href="/psychology/css/themes/jquery.mobile.icons.min.css" rel="stylesheet">
+		<link href="/psychology/css/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet">
+		<link href="/psychology/css/fonts/fonts.css" rel="stylesheet">
+		<link href="/psychology/css/alertify.css" rel="stylesheet">
+		<script src="/psychology/js/jquery-1.11.1.min.js"></script>
+		<script src="/psychology/js/jquery-migrate-1.2.1.js"></script>
+		<script src="/psychology/js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="/psychology/js/available.js"></script>
+		<script src="/psychology/js/alertify.js"></script>
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+	</head>
+	<body>
+		<div id="post-report-page" data-role="page" class="ui-responsive-panel">
+			<div data-role="header">
+				<a id="report-panel-menu" class="roboto-slab2" href="#report-main-panel" data-icon="bars">選單</a>
+				<h1 class="roboto-slab2">可接的輔導名單</h1>
+			</div>
+			
+			<div role="main" class="ui-content jqm-content jqm-fullwidth">
+					<div data-role="collapsibleset" data-filter="true" data-inset="true" id="available-list" data-input="#searchCollapsible"></div>
+			</div>
+			<div id="report-main-panel" data-display="push" data-theme="a" data-role="panel">
+				<ul id="list-report-panel" data-role="listview">
+					<li data-icon="delete" data-theme="e"><a href="#" data-rel="close">關閉選單</a></li>
+					<li data-icon="home"><a href="index.html" data-ajax="false">回到首頁</a></li>
+					<li data-icon="edit"><a id="post-report" href="parent_message.html" data-ajax="false">家長訊息</a></li>
+					<li data-icon="user"><a href="account_set.html" data-ajax="false">帳號設定</a></li>
+					<li data-icon="info"><a href="my_list.html" data-ajax="false">我的輔導名單</a></li>
+					<li data-icon="info"><a href="available.html" data-ajax="false">可接的輔導名單</a></li>
+					<!--<li data-icon="info"><a href="talk_record.html" data-ajax="false">填寫晤談記錄</a></li>-->
+					<li><a id="main-logon" href="#">登出</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</body>	
+</html>

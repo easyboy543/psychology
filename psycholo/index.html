@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>輔導關懷網</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<link href="/psychology/css/themes/front_end.min.css" rel="stylesheet">
+		<link href="/psychology/css/themes/jquery.mobile.icons.min.css" rel="stylesheet">
+		<link href="/psychology/css/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet">
+		<link href="/psychology/css/fonts/fonts.css" rel="stylesheet">
+		<link href="/psychology/css/alertify.css" rel="stylesheet">
+		<script src="/psychology/js/jquery-1.11.1.min.js"></script>
+		<script src="/psychology/js/jquery-migrate-1.2.1.js"></script>
+		<script src="/psychology/js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="/psychology/js/psycholo.js"></script>
+		<script src="/psychology/js/alertify.js"></script>
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+	</head>
+	<body>
+		<div id="main-page" data-role="page" class="ui-responsive-panel">
+			<div data-role="header">
+				<a id="panel-menu" class="roboto-slab2" href="#main-panel" data-icon="bars">選單</a>
+				<a id="panel-login" class="roboto-slab2" href="#main-login" data-icon="gear">登入</a>
+				<h1 class="roboto-slab2">輔導員</h1>
+			</div>
+			
+			<div role="main" class="ui-content jqm-content jqm-fullwidth">
+				<div id="gallery" class="camera_wrap camera_azure_skin"></div>
+				<h2 class="roboto-slab2">
+					為維護與增進學生心理健康，於民國六十五年成立「學生心理衛生中心」，隸屬於訓導處。
+					七十一年改稱「學生輔導中心」。七十六年配合改制獨立，名稱為學生輔導中心。
+				</h2>
+				<h2 class="roboto-slab2">
+					依九十二學年度校務會議決議，學生輔導中心更名為心理輔導中心，隸屬於學務處。
+				</h2>
+				<h2 class="roboto-slab2">
+　　				本中心目前位於行政大樓三樓，內有辦公室、個別 諮商室2間及團體諮商室1間
+				</h2>
+				<h2 class="roboto-slab2">
+					主要工作有：辦理心理衛生及人文修養專題演講,個別諮商,實施個別或團體心理測驗及解釋,提供輔導資料及心理叢書借,宣導心理衛生知識,心理衛生影片觀賞與討論,小團體成長訓練,協助辦理 國中小學導師輔導知能研習,資源教室業務,舉辦輔導工作研習會等。</h1>
+				</h2>
+				<ul id="list-stu-new" data-role="listview"></ul>
+			</div>
+			<div id="main-panel" data-display="push" data-theme="a" data-role="panel">
+				<ul id="list-panel" data-role="listview">
+					<li data-icon="delete" data-theme="e"><a href="#" data-rel="close">關閉選單</a></li>
+					<li data-icon="home"><a href="index.html" data-ajax="false">回到首頁</a></li>
+					<li data-icon="edit"><a id="post-report" href="parent_message.html" data-ajax="false">家長訊息</a></li>
+					<li data-icon="user"><a href="account_set.html" data-ajax="false">帳號設定</a></li>
+					<li data-icon="info"><a href="my_list.html" data-ajax="false">我的輔導名單</a></li>
+					<li data-icon="info"><a href="available.html" data-ajax="false">可接的輔導名單</a></li>
+					<!--<li data-icon="info"><a href="talk_record.html" data-ajax="false">填寫晤談記錄</a></li>-->
+					<li><a id="main-logon" href="#">登出</a></li>
+				</ul>
+			</div>
+			
+			<div id="main-login" data-role="panel" data-position="right" data-display="reveal" data-theme="a">
+				<form id="login-form">
+					<h2>登入</h2>
+					<label for="user-acc">帳號:</label>
+					<input id="user-acc" data-clear-btn="true" data-mini="true" type="text">
+					<label for="user-pwd">密碼:</label>
+					<input id="user-pwd" data-clear-btn="true" data-mini="true" type="password">
+					<div class="ui-grid-a">
+						<div class="ui-block-a"><a href="#" id="login-btn" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-mini">登入</a></div>
+						<div class="ui-block-b"><a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-e ui-mini">取消</a></div>
+					</div>
+					<label for="recaptcha">通過下面驗證：</label>
+					<div id="recaptcha" class="g-recaptcha" data-sitekey="6LfR9P8SAAAAAGiRPqulLwgp2HEJoh9ycA4zksxv"></div>
+					<!--<a id="fb-login" href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-fb_icon ui-btn-b ui-mini">使用Facebook登入</a>-->
+				</form>
+			</div>
+			
+		</div>
+	</body>	
+</html>

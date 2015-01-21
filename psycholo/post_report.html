@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>輔導關懷網</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<link href="/psychology/css/themes/front_end.min.css" rel="stylesheet">
+		<link href="/psychology/css/themes/jquery.mobile.icons.min.css" rel="stylesheet">
+		<link href="/psychology/css/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet">
+		<link href="/psychology/css/fonts/fonts.css" rel="stylesheet">
+		<link href="/psychology/css/alertify.css" rel="stylesheet">
+		<script src="/psychology/js/jquery-1.11.1.min.js"></script>
+		<script src="/psychology/js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="/psychology/js/post_report.js"></script>
+		<script src="/psychology/js/alertify.js"></script>
+	</head>
+	<body>
+		<div id="post-report-page" data-role="page" class="ui-responsive-panel">
+			<div data-role="header">
+				<a id="report-panel-menu" class="roboto-slab2" href="#report-main-panel" data-icon="bars">選單</a>
+				<h1 class="roboto-slab2">我要申報</h1>
+			</div>
+			
+			<div role="main" class="ui-content jqm-content jqm-fullwidth">
+				<form id="report-form">
+					<ul data-role="listview" data-inset="true">
+						<li class="ui-field-contain">
+							<label class="roboto-slab2" for="report_name">請輸入申報學號：</label>
+							<input name="report_name" id="report_name" type="text">
+						</li>
+						<li class="ui-field-contain">
+							<ul id="report-name-list" data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="找學號..." data-filter-theme="a"></ul>
+						</li>	
+						<li class="ui-field-contain">
+							<label for="select-event">請選擇呈報原因：</label>
+								<select id="select-event" data-native-menu="false">
+									<option value="請選擇呈報原因">請選擇呈報原因</option>
+									<option value="生涯探索">生涯探索</option>
+									<option value="時間管理">時間管理</option>
+									<option value="情緒管理">情緒管理</option>
+									<option value="人際互動">人際互動</option>
+									<option value="性別議題">性別議題</option>
+									<option value="情感議題">情感議題</option>
+									<option value="網路成癮">網路成癮</option>
+									<option value="精神方面疾病">精神方面疾病</option>
+									<option value="其他">其他</option>
+								</select>
+						</li>
+						<li class="ui-body ui-body-b">
+							<fieldset class="ui-grid-a">
+								<div class="ui-block-a">
+									<a id="report-button" href="#" data-role="button" class="ui-btn ui-corner-all ui-btn-a">送出</a>
+								</div>
+								<div class="ui-block-b">
+									<a id="cancel-button" href="#" data-role="button" class="ui-btn ui-corner-all ui-btn-e">取消</a>
+								</div>
+							</fieldset>
+						</li>
+					</ul>
+				</form>
+			</div>
+			<div id="report-main-panel" data-display="push" data-theme="a" data-role="panel">
+				<ul id="list-report-panel" data-role="listview">
+					<li data-icon="delete" data-theme="e"><a href="#" data-rel="close">關閉選單</a></li>
+					<li data-icon="home"><a href="index.html" data-ajax="false">回到首頁</a></li>
+					<li data-icon="edit"><a href="post_report.html" data-ajax="false">我要申報</a></li>
+					<li data-icon="user"><a href="account_set.html" data-ajax="false">帳號設定</a></li>
+					<li data-icon="info"><a href="report_list.html" data-ajax="false">申報情形</a></li>
+					<li><a id="main-logon" href="#">登出</a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</body>	
+</html>
